@@ -1,23 +1,32 @@
-\documentclass[12pt]{article}
+\documentclass[12pt, letterpaper]{article}
 \usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{babel}
 \usepackage{multicol}
-\usepackage[tmargin=0.5in,lmargin=0.5in,rmargin=0.2in]{geometry}
+\usepackage{fancybox}
+
+\geometry{letterpaper, tmargin=0.5in,lmargin=0.5in,rmargin=0.2in}
+
+\title{Generic Resume for Jake Lee}
+\author{Jake Lee \thanks{inspired by nubby}}
+\date{\today}
 
 \begin{document}
 
-\begin{multicols}{2}
-  \section*{Relevant Experience}
-  \columnbreak
+  \begin{multicols}{2}
+    \section*{Relevant Experience}
+    \columnbreak
 
-  \begin{Large}
     \begin{flushright}
-      \framebox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{\itshape
-      Jake Lee\\(408) 483-2722\\
-      jacobjonathangieferlee@gmail.com}}
+      \noindent
+      \setlength{\fboxsep}{1cm}
+      \doublebox{\parbox{0.35\textwidth}{\bf
+        Jake Lee\\(408) 483-2722\\jacobjonathangieferlee@gmail.com
+      }}
     \end{flushright}
-  \end{Large}
 
-\end{multicols}
+  \end{multicols}
   
 
 \end{document}
