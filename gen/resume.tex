@@ -3,30 +3,37 @@
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \usepackage{babel}
-\usepackage{multicol}
+%\usepackage{multicol}
 \usepackage{fancybox}
 
 \geometry{letterpaper, tmargin=0.5in,lmargin=0.5in,rmargin=0.2in}
 
+% Title not included.
 \title{Generic Resume for Jake Lee}
 \author{Jake Lee \thanks{inspired by nubby}}
 \date{\today}
 
 \begin{document}
+  % NOTE: Remove columns, use smarter positioning.
+  %\begin{multicols}{2}
+  \begin{flushright}
+    \parbox{0.5\textwidth}{
+      \textbf{Mission Statement:} To apply sensor fusion, cognitive neural nets, and drones to promote sustainable farming practices.
+    }
+  \end{flushright}
+    %\columnbreak
 
-  \begin{multicols}{2}
-    \section*{Relevant Experience}
-    \columnbreak
+  \begin{flushleft}
+    \noindent
+    \setlength{\fboxsep}{1cm}
+    \doublebox{\parbox{0.35\textwidth}{\bf
+      \section*{Jake Lee}
+      (408) 483-2722\\jacobjonathangieferlee@gmail.com
+    }}
+  \end{flushleft}
 
-    \begin{flushright}
-      \noindent
-      \setlength{\fboxsep}{1cm}
-      \doublebox{\parbox{0.35\textwidth}{\bf
-        Jake Lee\\(408) 483-2722\\jacobjonathangieferlee@gmail.com
-      }}
-    \end{flushright}
-
-  \end{multicols}
+  %\end{multicols}
+  \section*{Relevant Experience}
   
 
 \end{document}
