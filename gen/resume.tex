@@ -3,10 +3,17 @@
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \usepackage{babel}
-%\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage{multicol}
 \usepackage{fancybox}
+\usepackage{array}
 
-\geometry{letterpaper, tmargin=0.5in,lmargin=0.5in,rmargin=0.2in}
+\geometry{letterpaper, bmargin=0.2in, tmargin=0.5in,lmargin=0.3in,rmargin=0.3in}
+\righthyphenmin=62
+\lefthyphenmin=62
+\renewcommand{\arraystretch}{2}
+\renewcommand{\labelitemi}{$\square$}
+\pagenumbering{gobble}
 
 % Title not included.
 \title{Generic Resume for Jake Lee}
@@ -14,26 +21,56 @@
 \date{\today}
 
 \begin{document}
-  % NOTE: Remove columns, use smarter positioning.
-  %\begin{multicols}{2}
-  \begin{flushright}
-    \parbox{0.5\textwidth}{
-      \textbf{Mission Statement:} To apply sensor fusion, cognitive neural nets, and drones to promote sustainable farming practices.
-    }
-  \end{flushright}
-    %\columnbreak
-
-  \begin{flushleft}
-    \noindent
-    \setlength{\fboxsep}{1cm}
-    \doublebox{\parbox{0.35\textwidth}{\bf
-      \section*{Jake Lee}
-      (408) 483-2722\\jacobjonathangieferlee@gmail.com
-    }}
-  \end{flushleft}
-
-  %\end{multicols}
-  \section*{Relevant Experience}
-  
-
+	% NOTE: Remove columns, use smarter positioning.
+	\begin{multicols}{2}
+		\begin{center}
+			\noindent
+			\setlength{\fboxsep}{0.5cm}
+			\doublebox{\parbox{0.35\textwidth}{\bf
+				\Huge Jake Lee\\\\
+				\small (408) 483-2722\\jacobjonathangieferlee@gmail.com}}
+		\end{center}
+	\columnbreak
+		\begin{flushleft}
+			\parbox{0.5\textwidth}{
+				\textbf{Mission Statement:} To help to develop technology to empower artistic expression, promote environmental sustainability, and bring together people of diverse backgrounds with common aspirations.
+			}
+		\end{flushleft}
+	\end{multicols}
+	\section*{Relevant Experience}
+	\begin{center}
+		\begin{tabular}{ m{2cm}	 m{6cm} | m{11cm} }
+			\textit{Jan 2018 - Jan 2020} & 
+			Google Nest/Health \newline [via Artech Information Systems] & 
+			\textbf{Data Collection Technician}: software/hardware test automation, mechatronics design, team collaboration\\
+			\textit{Jun 2017 - Sept 2017} & 
+			Hartnell Community College & 
+			\textbf{Engineering Mentor}: project management, engineering design lessons [power systems/RF hardware design]\\
+			\textit{Jun 2016 - Oct 2016} & 
+			Pactron Inc & 
+			\textbf{Lab Engineer}: hardware testing, root-cause problem identification
+		\end{tabular}
+	\end{center}
+	\section*{Certifications}
+	\textbf{B.S. Electrical Engineering, Baskin School of Engineering (UC Santa Cruz)} [2017]\\
+	\textbf{Engineer in Training (E.I.T), Board for Professional Engineers, Land Surveyors, and Geologists} [2018]
+	\section*{Relevant Skills}
+	\begin{flushleft}
+		\begin{itemize}
+			\item Programming languages of proficiency: Python, C, bash, Verilog (HDL), HTML/CSS, \LaTeX, English, Spanish
+			\item Automation: mechatronics design, sensor data analysis/perception
+			\item Electronics design: RF hardware, high-speed/digital, power systems, communications (I2C, SPI, UART)
+			\item Technical: soldering/electronics rework, electronics testing/qualification, data collection methodologies
+			\item Spoken languages: English, Spanish
+		\end{itemize}
+	\end{flushleft}
+	\section*{Additional Information}
+	\begin{flushleft}
+		\begin{itemize}
+			\item website: jakejglee.github.io
+			\item GitHub: jakejglee
+			\item musician (bass guitar)
+		\end{itemize}
+	\end{flushleft}
+	References available on request.
 \end{document}
